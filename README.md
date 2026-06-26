@@ -1,11 +1,26 @@
-# Awesome-SwiGLU-Activation
-## SwiGLU Activation Function: Evolution, Variants, Types, & Applications
+<div align="center">
+  <img src="assets/banner.svg" alt="Awesome SwiGLU Activation Banner" width="800">
 
-SwiGLU (Swish Gated Linear Unit) is an advanced neural network activation function that serves as a cornerstone components in the feed-forward networks (FFN) of modern Large Language Models (LLMs). Introduced by Noam Shazeer in 2020 ("GLU Variants Improve Transformer"), SwiGLU combines the properties of the **Swish** activation function with a **Gated Linear Unit (GLU)** framework. By utilizing a gating mechanism where one linear projection dynamically modulates the information flow of another via a non-linear activation element-wise, SwiGLU enhances gradient flow, improves mathematical capacity, and drives faster convergence speeds compared to traditional ReLU or GELU alternatives.
+  # Awesome SwiGLU Activation 🚀
+
+  ### A curated overview of the Swish Gated Linear Unit (SwiGLU) activation function - its evolution, variants, mathematical formulations, hardware kernels, and applications in Large Language Models (LLMs) like Llama 3, Mistral, Gemma, and DeepSeek.
+
+  <p align="center">
+    <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+    <a href="https://github.com/ishandutta2007/Awesome-SwiGLU-Activation/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-SwiGLU-Activation?style=flat-square&logo=github" alt="GitHub Stars"/></a>
+    <a href="https://github.com/ishandutta2007/Awesome-SwiGLU-Activation/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-SwiGLU-Activation?style=flat-square&logo=github" alt="GitHub Issues"/></a>
+    <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square" alt="License: MIT"/></a>
+    <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+  </p>
+</div>
 
 ---
 
-## 1. The Chronological Evolution
+SwiGLU (Swish Gated Linear Unit) is an advanced neural network activation function that serves as a cornerstone component in the feed-forward networks (FFN) of modern Large Language Models (LLMs). Introduced by Noam Shazeer in 2020 ("GLU Variants Improve Transformer"), SwiGLU combines the properties of the **Swish** activation function with a **Gated Linear Unit (GLU)** framework. By utilizing a gating mechanism where one linear projection dynamically modulates the information flow of another via a non-linear activation element-wise, SwiGLU enhances gradient flow, improves mathematical capacity, and drives faster convergence speeds compared to traditional ReLU or GELU alternatives.
+
+---
+
+## 📅 1. The Chronological Evolution
 
 The implementation of non-linear activation mechanisms within deep learning architectures has transitioned from rigid bounding gates to smooth stochastic approximations, moving toward high-capacity gated dual-tower operations.
 
@@ -24,7 +39,7 @@ flowchart LR
 
 ---
 
-## 2. Core GLU Family Variants
+## 🧬 2. Core GLU Family Variants
 
 The mathematical framework introduced by Shazeer outlines several variations of Gated Linear Units, distinguished exclusively by the underlying non-linear activation function used within the gating path.
 
@@ -36,7 +51,7 @@ The mathematical framework introduced by Shazeer outlines several variations of 
 
 ---
 
-## 3. Structural FFN Layer Architecture Modifications
+## 🏗️ 3. Structural FFN Layer Architecture Modifications
 
 Integrating a GLU-style activation function alters the underlying structural configuration and parameter distribution of a Transformer's Feed-Forward Network (FFN) layer.
 
@@ -47,7 +62,7 @@ Integrating a GLU-style activation function alters the underlying structural con
 
 ---
 
-## 4. Production Engineering Challenges & Hardware Solutions
+## ⚡ 4. Production Engineering Challenges & Hardware Solutions
 
 While SwiGLU yields notable accuracy gains on paper, its dual-tower structure introduces explicit system-level memory and computational boundaries.
 
@@ -58,11 +73,10 @@ While SwiGLU yields notable accuracy gains on paper, its dual-tower structure in
 
 ---
 
-## 5. Frontier Real-World Applications
+## 🌐 5. Frontier Real-World Applications
 
 | Application | First Used | Paper / Reference |
 | :--- | :---: | :--- |
 | **[Autoregressive LLM Base Pre-Training Foundations](./details/autoregressive_llm_pretraining.md)**<br>• *Application:* Serves as the default non-linear computation engine inside state-of-the-art base models. SwiGLU's smooth mathematical landscape allows models to train stably over trillions of tokens without encountering sudden gradient explosions. | 2022 | [PaLM: Scaling Language Modeling with Pathways](https://arxiv.org/abs/2204.02311) (Chowdhery et al., 2022) |
 | **[High-Yield Code Generation & Synthesis Blocks](./details/code_generation_synthesis.md)**<br>• *Application:* Deployed within specialized software engineering networks. The enhanced multi-path capacity of gated linear units excels at tracking structured code indentation shifts, syntax logic boundaries, and explicit variable compilation rules. | 2023 | [Code Llama: Open and Efficient Foundation Models for Code](https://arxiv.org/abs/2308.12950) (Rozière et al., 2023) |
 | **[Mixture-of-Experts (MoE) Token Routing Networks](./details/moe_token_routing.md)**<br>• *Application:* Integrated directly into the dense expert blocks of massive Mixture-of-Experts models (like DeepSeek-V3 or Mixtral). SwiGLU process the activated sparse routing selections efficiently, scaling token computation throughput across deep distributed network nodes. | 2021 | [GLaM: Efficient Scaling of Language Models with Mixture-of-Experts](https://arxiv.org/abs/2112.06905) (Chowdhery et al., 2021) |
-
