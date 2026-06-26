@@ -80,3 +80,17 @@ While SwiGLU yields notable accuracy gains on paper, its dual-tower structure in
 | **[Autoregressive LLM Base Pre-Training Foundations](./details/autoregressive_llm_pretraining.md)**<br>• *Application:* Serves as the default non-linear computation engine inside state-of-the-art base models. SwiGLU's smooth mathematical landscape allows models to train stably over trillions of tokens without encountering sudden gradient explosions. | 2022 | [PaLM: Scaling Language Modeling with Pathways](https://arxiv.org/abs/2204.02311) (Chowdhery et al., 2022) |
 | **[High-Yield Code Generation & Synthesis Blocks](./details/code_generation_synthesis.md)**<br>• *Application:* Deployed within specialized software engineering networks. The enhanced multi-path capacity of gated linear units excels at tracking structured code indentation shifts, syntax logic boundaries, and explicit variable compilation rules. | 2023 | [Code Llama: Open and Efficient Foundation Models for Code](https://arxiv.org/abs/2308.12950) (Rozière et al., 2023) |
 | **[Mixture-of-Experts (MoE) Token Routing Networks](./details/moe_token_routing.md)**<br>• *Application:* Integrated directly into the dense expert blocks of massive Mixture-of-Experts models (like DeepSeek-V3 or Mixtral). SwiGLU process the activated sparse routing selections efficiently, scaling token computation throughput across deep distributed network nodes. | 2021 | [GLaM: Efficient Scaling of Language Models with Mixture-of-Experts](https://arxiv.org/abs/2112.06905) (Chowdhery et al., 2021) |
+
+---
+
+## 📈 Star History
+
+<div align="center">
+<a href="https://www.star-history.com/?repos=ishandutta2007%2FAwesome-SwiGLU-Activation&type=date&legend=bottom-right">
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-SwiGLU-Activation&type=date&theme=dark&legend=bottom-right" />
+<source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-SwiGLU-Activation&type=date&legend=bottom-right" />
+<img alt="Star History Chart" src="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-SwiGLU-Activation&type=date&legend=bottom-right" />
+</picture>
+</a>
+</div>
